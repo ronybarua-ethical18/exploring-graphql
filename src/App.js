@@ -9,7 +9,8 @@ import ClickCounter from './Components/HigherOrderComponent/ClickCounter'
 import HoverCounter from './Components/HigherOrderComponent/HoverCounter'
 import { useCallback } from 'react';
 import { useMemo } from 'react';
-
+import Form from './Components/UseRefandForwardRef/Form'
+import Time from './Components/UseRefandForwardRef/Time'
 function App() {
   const [count1, setCount1] = useState(0)
   const [count2,setCount2] = useState(0)
@@ -42,6 +43,8 @@ function App() {
       <hr/>
       <ShowCount count ={count2} title="counter 2" />
       <ButtonComponent handleClick={incrementByFive}>Increment by Five</ButtonComponent>
+      {/* <Form /> */}
+      <Time />
     </div>
   );
 }
